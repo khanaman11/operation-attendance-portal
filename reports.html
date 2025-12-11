@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="layout">
+        <div class="menu-btn" id="menuBtn">☰</div>
+        <aside class="sidebar" id="sidebar">
+            <div class="logo-box">
+                <img src="./image/logo.png" alt="logo">
+            </div>
+
+            <ul class="menu">
+                <li><i class="icon">🏠</i><span>Dashboard</span></li>
+                <li><i class="icon">📝</i><span>Mark Attendance</span></li>
+                <li><i class="icon">📤</i><span>Upload Documents</span></li>
+                <li><i class="icon">📑</i><span>Reports</span></li>
+                <li><i class="icon">🚪</i><span>Sign Out</span></li>
+            </ul>
+        </aside>
+        <div class="filter-section">
+            <div class="header">
+                <h2>REPORTS</h2>
+                <div class="header-btn">
+                    <button class="dashBtn">Dashbord</button>
+                    <button class="signBtn">Sign Out</button>
+                </div>
+            </div>
+            <div class="filter-header">
+                <h3>Filter</h3>
+            </div>
+
+            <div class="filter-body">
+
+                <div class="form-group">
+                    <label>State <span>*</span></label>
+                    <select>
+                        <option>09 - UTTAR PRADESH</option>
+                        <option>08 - RAJASTHAN</option>
+                        <option>10 - BIHAR</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>City <span>*</span></label>
+                    <select>
+                        <option>Select</option>
+                        <option>Lucknow</option>
+                        <option>Kanpur</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Exam Center <span>*</span></label>
+                    <input type="text" placeholder="Enter Center Name">
+                </div>
+                <div class="form-group">
+                    <label>Report Type <span>*</span></label>
+                    <input type="text" placeholder="Status report">
+                </div>
+
+                <div class="form-group btn-box">
+                    <button class="search-btn">Search</button>
+                </div>
+
+            </div>
+            <div class="detail-container">
+                <div class="detail-header">
+                    <h2>Detail Report</h2>
+                    <div class="detail-buttons">
+                        <div>
+                            <button class="btn">Show 100 rows</button>
+                            <button class="btn">Excel</button>
+                            <button class="btn">Print</button>
+                        </div>
+                        <div class="search-box">
+                            <label>Search:</label>
+                            <input type="text" placeholder="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="detail-table-wrapper">
+                    <table class="detail-table">
+                        <thead>
+                            <tr>
+                                <th>ExamCode</th>
+                                <th>State</th>
+                                <th>City</th>
+                                <th>Centre Code</th>
+                                <th>Centre</th>
+                                <th>Customer Satisfactory Report</th>
+                                <th>Uploaded</th>
+                                <th>Detail</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>AIBE-XX</td>
+                                <td>MEGHALAYA</td>
+                                <td>SHILLONG</td>
+                                <td>1478</td>
+                                <td>R.B. ANUPCHAND HINDI SECONDARY SCHOOL</td>
+                                <td>Uploaded</td>
+                                <td>1</td>
+                                <td><a href="#" class="view-btns">View</a></td>
+                            </tr>
+
+                            <tr>
+                                <td>AIBE-XX</td>
+                                <td>MEGHALAYA</td>
+                                <td>SHILLONG</td>
+                                <td>1478</td>
+                                <td>R.B. ANUPCHAND HINDI SECONDARY SCHOOL</td>
+                                <td>Uploaded</td>
+                                <td>1</td>
+                                <td><a href="#" class="view-btns">View</a></td>
+                            </tr>
+
+                            <tr>
+                                <td>AIBE-XX</td>
+                                <td>MEGHALAYA</td>
+                                <td>SHILLONG</td>
+                                <td>1478</td>
+                                <td>R.B. ANUPCHAND HINDI SECONDARY SCHOOL</td>
+                                <td>Uploaded</td>
+                                <td>1</td>
+                                <td><a href="#" class="view-btns">View</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

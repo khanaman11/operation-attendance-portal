@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="layout">
+        <div class="menu-btn" id="menuBtn">☰</div>
+        <aside class="sidebar" id="sidebar">
+            <div class="logo-box">
+                <img src="./image/logo.png" alt="logo">
+            </div>
+
+            <ul class="menu">
+                <li><i class="icon">🏠</i><span>Dashboard</span></li>
+                <li><i class="icon">📝</i><span>Mark Attendance</span></li>
+                <li><i class="icon">📤</i><span>Upload Documents</span></li>
+                <li><i class="icon">📑</i><span>Reports</span></li>
+                <li><i class="icon">🚪</i><span>Sign Out</span></li>
+            </ul>
+        </aside>
+        <div class="filter-section">
+            <div class="header">
+                <h2>UPLOAD DOCUMENTS</h2>
+                <div class="header-btn">
+                    <button class="dashBtn">Dashbord</button>
+                    <button class="signBtn">Sign Out</button>
+                </div>
+            </div>
+            <div class="filter-header">
+                <h3>Filter</h3>
+            </div>
+
+            <div class="filter-body">
+
+                <div class="form-group">
+                    <label>State <span>*</span></label>
+                    <select>
+                        <option>09 - UTTAR PRADESH</option>
+                        <option>08 - RAJASTHAN</option>
+                        <option>10 - BIHAR</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>City <span>*</span></label>
+                    <select>
+                        <option>Select</option>
+                        <option>Lucknow</option>
+                        <option>Kanpur</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Exam Center <span>*</span></label>
+                    <input type="text" placeholder="Enter Center Name">
+                </div>
+
+                <div class="form-group btn-box">
+                    <button class="search-btn">Search</button>
+                </div>
+
+            </div>
+            <div class="container-upload">
+                <div class="header-upload">Upload Supporting Document</div>
+                <div class="note">
+                    Note: Only .jpeg, .jpg and .pdf files are allowed to be uploaded. File should not be greater than
+                    5MB!
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>S. No.</th>
+                            <th>Document Description</th>
+                            <th>Browse File</th>
+                            <th>Upload</th>
+                            <th>View</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="S. No.">1</td>
+                            <td data-label="Description">Guard Group Selfie</td>
+                            <td data-label="Browse File"><input type="file" /></td>
+                            <td data-label="Upload"><button class=" upload-btn">⬆ </button></td>
+                            <td data-label="View"><button class=" view-btn">⬇ </button></td>
+                        </tr>
+
+
+                        <tr>
+                            <td data-label="S. No.">2</td>
+                            <td data-label="Description">Center Banner</td>
+                            <td data-label="Browse File"><input type="file" /></td>
+                            <td data-label="Upload"><button class=" upload-btn">⬆ </button></td>
+                            <td data-label="View"><button class=" view-btn">⬇ </button></td>
+                            
+                        </tr>
+
+
+                        <tr>
+                            <td data-label="S. No.">3</td>
+                            <td data-label="Description">Customer Satisfaction Report</td>
+                            <td data-label="Browse File"><input type="file" /></td>
+                            <td data-label="Upload"><button class=" upload-btn">⬆ </button></td>
+                            <td data-label="View"><button class=" view-btn">⬇ </button></td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

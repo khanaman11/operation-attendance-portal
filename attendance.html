@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="layout">
+        <div class="menu-btn" id="menuBtn">☰</div>
+        <aside class="sidebar" id="sidebar">
+            <div class="logo-box">
+                <img src="./image/logo.png" alt="logo">
+            </div>
+
+            <ul class="menu">
+                <li><i class="icon">🏠</i><span>Dashboard</span></li>
+                <li><i class="icon">📝</i><span>Mark Attendance</span></li>
+                <li><i class="icon">📤</i><span>Upload Documents</span></li>
+                <li><i class="icon">📑</i><span>Reports</span></li>
+                <li><i class="icon">🚪</i><span>Sign Out</span></li>
+            </ul>
+        </aside>
+        <div class="filter-section">
+            <div class="header">
+                <h2>ATTENDANCE</h2>
+                <div class="header-btn">
+                    <button class="dashBtn">Dashbord</button>
+                    <button class="signBtn">Sign Out</button>
+                </div>
+            </div>
+            <div class="filter-header">
+                <h3>Filter</h3>
+            </div>
+
+            <div class="filter-body">
+
+                <div class="form-group">
+                    <label>State <span>*</span></label>
+                    <select>
+                        <option>09 - UTTAR PRADESH</option>
+                        <option>08 - RAJASTHAN</option>
+                        <option>10 - BIHAR</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>City <span>*</span></label>
+                    <select>
+                        <option>Select</option>
+                        <option>Lucknow</option>
+                        <option>Kanpur</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Exam Center <span>*</span></label>
+                    <input type="text" placeholder="Enter Center Name">
+                </div>
+                <div class="form-group">
+                    <label>Report Type <span>*</span></label>
+                    <input type="text" placeholder="Status report">
+                </div>
+
+                <div class="form-group btn-box">
+                    <button class="search-btn">Search</button>
+                </div>
+
+            </div>
+
+            <div class="attendance-container">
+                <div class="attendance-header">
+                    <h2>Center Attendance</h2>
+                </div>
+
+                <div class="attendance-table-wrapper">
+                    <table class="attendance-table">
+                        <thead>
+                            <tr>
+                                <th>Sl.No</th>
+                                <th>Center Code</th>
+                                <th>Center</th>
+                                <th>Matrix Count</th>
+                                <th>Allotted Count</th>
+                                <th>CI Count</th>
+                                <th>CI Present</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>111</td>
+                                <td>NEW HINDI HIGHER SECONDARY SCHOOL</td>
+                                <td>200</td>
+                                <td>195</td>
+                                <td>1</td>
+                                <td>1</td>
+                            </tr>
+
+                            <tr>
+                                <td>2</td>
+                                <td>112</td>
+                                <td>ST. THOMAS SCHOOL</td>
+                                <td>180</td>
+                                <td>170</td>
+                                <td>1</td>
+                                <td>1</td>
+                            </tr>
+
+                            <tr>
+                                <td>3</td>
+                                <td>113</td>
+                                <td>MODERN PUBLIC SCHOOL</td>
+                                <td>220</td>
+                                <td>210</td>
+                                <td>1</td>
+                                <td>1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

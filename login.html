@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+
+    <!-- Login section start -->
+    <div class="login_wrapper login-section">
+        <div class="container">
+            <h2><img src="./image/logo.png" alt="logo"></h2>
+            <p class="login-title">LOGIN</p>
+
+            <div class="input-box">
+                <label>Username</label>
+                <input type="text" id="username" placeholder="Enter Username" />
+            </div>
+
+            <div class="input-box password-box">
+                <label>Password</label>
+                <input type="password" id="password" placeholder="Enter Password" />
+                <span id="togglePassword">👁️</span>
+            </div>
+
+            <div class="captcha-row">
+                <div class="captcha-label">Captcha Code <span>*</span></div>
+                <div class="captcha-code" id="captcha"></div>
+                <input type="text" id="captchaInput" placeholder="Enter Captcha" />
+            </div>
+             <button onclick="login()" class="btn-login">Login</button>
+        </div>
+    </div>
+    <!-- Login section end -->
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
