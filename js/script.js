@@ -1,33 +1,47 @@
+// sub menu script
+document.addEventListener("DOMContentLoaded", () => {
+  const menuItem = document.querySelector(".has-submenu");
+
+  menuItem.querySelector(".main-item").addEventListener("click", function () {
+    const submenu = menuItem.querySelector(".submenu");
+
+    submenu.classList.toggle("open");
+    menuItem.classList.toggle("active");
+  });
+});
+
+
+
 // Generate random captcha
 function generateCaptcha() {
-    const chars = "abcdefghijklmnopqrstuvwxyz0123456789";
-    let captchaText = "";
-    for (let i = 0; i < 5; i++) {
-        captchaText += chars[Math.floor(Math.random() * chars.length)];
-    }
-    document.getElementById("captcha").textContent = captchaText;
+  const chars = "abcdefghijklmnopqrstuvwxyz0123456789";
+  let captchaText = "";
+  for (let i = 0; i < 5; i++) {
+    captchaText += chars[Math.floor(Math.random() * chars.length)];
+  }
+  document.getElementById("captcha").textContent = captchaText;
 }
 
 generateCaptcha();
 
 // Show / Hide Password
 document.getElementById("togglePassword").onclick = function () {
-    const pass = document.getElementById("password");
-    pass.type = pass.type === "password" ? "text" : "password";
+  const pass = document.getElementById("password");
+  pass.type = pass.type === "password" ? "text" : "password";
 };
 
 // Login BTN Click
 function login() {
-    const captcha = document.getElementById("captcha").textContent;
-    const enteredCaptcha = document.getElementById("captchaInput").value;
+  const captcha = document.getElementById("captcha").textContent;
+  const enteredCaptcha = document.getElementById("captchaInput").value;
 
-    if (enteredCaptcha !== captcha) {
-        alert("Captcha Incorrect!");
-        generateCaptcha();
-        return;
-    }
+  if (enteredCaptcha !== captcha) {
+    alert("Captcha Incorrect!");
+    generateCaptcha();
+    return;
+  }
 
-    alert("Login Successful!");
+  alert("Login Successful!");
 }
 
 
@@ -51,11 +65,17 @@ new Chart(ctx, {
 
 // Aside show or hide 
 
-    const menuBtn = document.getElementById("menuBtn");
-    const sidebar = document.getElementById("sidebar");
+const menuBtn = document.getElementById("menuBtn");
+const sidebar = document.getElementById("sidebar");
 
-    menuBtn.addEventListener("click", () => {
-        sidebar.classList.toggle("open");
-    });
+menuBtn.addEventListener("click", () => {
+  sidebar.classList.toggle("open");
+});
+
+// ============================================================
+
+
+
+
 
 
