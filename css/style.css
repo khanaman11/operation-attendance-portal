@@ -854,3 +854,594 @@ td {
         text-align: center;
     }
 }
+
+
+/* Roles add section */
+.role-container {
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.rights-box {
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.rights-header {
+    background: #2A75AE;
+    color: white;
+    padding: 12px 18px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.rights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 18px;
+    padding: 20px;
+}
+
+.right-item label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.options label {
+    margin-right: 10px;
+    font-weight: normal;
+    color: #444;
+}
+
+.submit-btn {
+    background: #2A75AE;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: #a3c845;
+    transform: scale(1.05);
+}
+
+.btn-wrap {
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+/* Roles table section */
+.roles-container {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    font-family: 'Poppins', sans-serif;
+}
+
+.roles-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.page-size select {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.search-box input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.add-btn {
+    background: #a3c845;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-btn:hover {
+    background: #95bd30;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.roles-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.roles-table thead {
+    background: #eef3f9;
+}
+
+.roles-table th {
+    text-align: left;
+    padding: 12px;
+    font-weight: 600;
+    color: #333;
+    white-space: nowrap;
+}
+
+.roles-table td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    color: #444;
+}
+
+.roles-table tbody tr:hover {
+    background: #f7fbff;
+    transition: 0.2s;
+}
+
+.edit-btn {
+    background: #a3c845;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.edit-btn i {
+    margin-right: 5px;
+}
+
+.edit-btn:hover {
+    background: #92bb2b;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+
+    .roles-container {
+        padding: 15px;
+    }
+
+    .roles-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .add-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .search-box input {
+        width: 100%;
+    }
+
+    .page-size select {
+        width: 100%;
+    }
+
+    .table-wrapper {
+        border: 1px solid #eee;
+    }
+
+    .roles-table {
+        width: 1000px;
+        /* mobile scrollable width */
+    }
+}
+
+@media (max-width: 480px) {
+    .roles-header {
+        gap: 8px;
+    }
+
+    .add-btn {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .roles-table {
+        font-size: 12px;
+        width: 900px;
+    }
+}
+
+/* Permission table section */
+
+.user-container {
+    font-family: "Poppins", sans-serif;
+    background: #fff;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+.user-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.page-size select {
+    padding: 7px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.search-box input {
+    padding: 8px 14px;
+    width: 220px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+/* Table Section */
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 12px;
+    background: #fff;
+}
+
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 900px;
+}
+
+/* Table Header */
+.user-table thead {
+    background: linear-gradient(90deg, #007bff, #00b8ff);
+    color: #fff;
+}
+
+.user-table th {
+    padding: 14px;
+    text-align: left;
+    font-size: 14px;
+}
+
+/* Table Body */
+.user-table td {
+    padding: 14px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+.user-table tr:hover {
+    background: #f7fbff;
+}
+
+/* Membership Tags */
+.membership-tag {
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 6px;
+    display: inline-block;
+    font-size: 13px;
+}
+
+.membership-tag.super {
+    color: #0a7aff;
+}
+
+.membership-tag.standard {
+    color: #00954d;
+}
+
+/* Buttons */
+.btn {
+    border: none;
+    padding: 7px 14px;
+    font-size: 13px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin-right: 5px;
+}
+
+.btn.edit {
+    background: #0056d6;
+    color: #fff;
+}
+
+.btn.edit:hover {
+    background: #003d9c;
+}
+
+.btn.pass {
+    background: #0fad58;
+    color: #fff;
+}
+
+.btn.pass:hover {
+    background: #0b8a47;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .search-box input {
+        width: 100%;
+    }
+
+    .page-size select {
+        width: 100%;
+    }
+
+    .user-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    .user-table td,
+    .user-table th {
+        padding: 10px;
+        font-size: 13px;
+    }
+}
+
+/* permission add section */
+
+.main-form {
+    margin: 30px auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.07);
+}
+
+/* Section Title */
+.form-section {
+    margin-bottom: 30px;
+}
+
+.form-section h3 {
+    background: #0f77c7;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-size: 17px;
+    margin-bottom: 18px;
+}
+
+/* Inputs */
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.2s;
+    background: #f9fbfd;
+}
+
+input:focus,
+select:focus {
+    border-color: #007bff;
+    background: #fff;
+}
+
+/* Radio Buttons */
+.gender-box {
+    display: flex;
+    gap: 15px;
+    padding-top: 8px;
+}
+
+/* Grids */
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* Buttons */
+.btn-box {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 12px 28px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn.back {
+    background: #ccc;
+}
+
+.btn.back:hover {
+    background: #b3b3b3;
+}
+
+.btn.submit {
+    background: #007bff;
+    color: #fff;
+}
+
+.btn.submit:hover {
+    background: #005fcc;
+}
+
+/* Responsive */
+/* ===========================
+   MOBILE RESPONSIVE FIXES
+   =========================== */
+@media (max-width: 768px) {
+
+    /* Sidebar Toggle Layout Fix */
+    .layout {
+        flex-direction: column;
+    }
+
+    /* Sidebar collapses on mobile */
+    .sidebar {
+        position: fixed;
+        width: 230px;
+        left: -230px;
+        height: 100vh;
+        top: 0;
+        transition: 0.3s ease-in-out;
+        z-index: 999;
+    }
+
+    .sidebar.open {
+        left: 0;
+    }
+
+    /* Menu button show on mobile */
+    .menu-btn {
+        display: block;
+        background: #0f77c7;
+        color: #fff;
+        padding: 10px 14px;
+        font-size: 22px;
+        border-radius: 6px;
+        margin: 10px;
+        width: fit-content;
+        cursor: pointer;
+    }
+
+    /* Header buttons responsive */
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .header-btn {
+        display: flex;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .header-btn button {
+        flex: 1;
+    }
+
+    /* Form responsive */
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+        grid-template-columns: 1fr !important;
+        gap: 15px;
+    }
+
+    .main-form {
+        padding: 15px;
+        margin-top: 20px;
+    }
+
+    input,
+    select {
+        padding: 12px;
+    }
+
+    /* Buttons full width on mobile */
+    .btn-box {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn-box .btn {
+        width: 100%;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+    .form-section h3 {
+        font-size: 15px;
+        padding: 8px 12px;
+    }
+
+    .menu span {
+        font-size: 14px;
+    }
+
+    .menu li {
+        padding: 10px 12px;
+    }
+}

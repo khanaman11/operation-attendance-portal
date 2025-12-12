@@ -47,3 +47,15 @@ new Chart(ctx, {
 });
 
 // pia chat js here end
+
+
+// Aside show or hide 
+
+    const menuBtn = document.getElementById("menuBtn");
+    const sidebar = document.getElementById("sidebar");
+
+    menuBtn.addEventListener("click", () => {
+        sidebar.classList.toggle("open");
+    });
+
+

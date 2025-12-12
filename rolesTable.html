@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Upload center</title>
+</head>
+
+<body>
+    <div class="layout">
+        <div class="menu-btn" id="menuBtn">☰</div>
+        <aside class="sidebar" id="sidebar">
+            <div class="logo-box">
+                <img src="./image/logo.png" alt="logo">
+            </div>
+
+            <ul class="menu">
+                <li><i class="icon">🏠</i><span>Dashboard</span></li>
+                <li><i class="icon">🏫</i><span>Upload Center</span></li>
+                <li><i class="icon">📝</i><span>Mark Attendance</span></li>
+                <li><i class="icon">📤</i><span>Upload Documents</span></li>
+                <li><i class="icon">📑</i><span>Reports</span></li>
+                <li><i class="icon">🚪</i><span>Sign Out</span></li>
+            </ul>
+        </aside>
+        <div class="filter-section">
+            <div class="header">
+                <h2>ROLES TABLE</h2>
+                <div class="header-btn">
+                    <button class="dashBtn">Dashbord</button>
+                    <button class="signBtn">Sign Out</button>
+                </div>
+            </div>
+            <div class="roles-container">
+
+                <div class="roles-header">
+                    <div class="page-size">
+                        <select>
+                            <option>10</option>
+                            <option>20</option>
+                            <option>30</option>
+                        </select>
+                        <span>per page</span>
+                    </div>
+
+                    <div class="search-box">
+                        <input type="text" placeholder="Search...">
+                    </div>
+
+                    <button class="add-btn">Add Admin Role</button>
+                </div>
+
+                <div class="table-wrapper">
+                    <table class="roles-table">
+                        <thead>
+                            <tr>
+                                <th>Role Name</th>
+                                <th>Admin Access</th>
+                                <th>Admin Access</th>
+                                <th>Manpower Payment Access</th>
+                                <th>Center Excel Download</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>SUPER USER</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                                <td class="action-box">
+                                    Super Admin
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>SUB ADMIN</td>
+                                <td>Yes</td>
+                                <td>No</td>
+                                <td>Yes</td>
+                                <td>No</td>
+                                <td class="action-box">
+                                    <button class="edit-btn"><i class="fa-solid fa-pen"></i> Edit</button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>FINANCE</td>
+                                <td>No</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                                <td>No</td>
+                                <td class="action-box">
+                                    <button class="edit-btn"><i class="fa-solid fa-pen"></i> Edit</button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>TRAINEE</td>
+                                <td>No</td>
+                                <td>No</td>
+                                <td>No</td>
+                                <td>No</td>
+                                <td class="action-box">
+                                    <button class="edit-btn"><i class="fa-solid fa-pen"></i> Edit</button>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

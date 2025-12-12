@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Permissions Table</title>
+</head>
+
+<body>
+    <div class="layout">
+        <div class="menu-btn" id="menuBtn">☰</div>
+        <aside class="sidebar" id="sidebar">
+            <div class="logo-box">
+                <img src="./image/logo.png" alt="logo">
+            </div>
+
+            <ul class="menu">
+                <li><i class="icon">🏠</i><span>Dashboard</span></li>
+                <li><i class="icon">🏫</i><span>Upload Center</span></li>
+                <li><i class="icon">📝</i><span>Mark Attendance</span></li>
+                <li><i class="icon">📤</i><span>Upload Documents</span></li>
+                <li><i class="icon">📑</i><span>Reports</span></li>
+                <li><i class="icon">🚪</i><span>Sign Out</span></li>
+            </ul>
+        </aside>
+        <div class="filter-section">
+            <div class="header">
+                <h2>PERMISSIONS TABLE</h2>
+                <div class="header-btn">
+                    <button class="dashBtn">Dashbord</button>
+                    <button class="signBtn">Sign Out</button>
+                </div>
+            </div>
+            <div class="user-container">
+
+                <!-- Header Controls -->
+                <div class="user-header">
+                    <div class="page-size">
+                        <select>
+                            <option>10</option>
+                            <option>20</option>
+                            <option>50</option>
+                        </select>
+                        <span>per page</span>
+                    </div>
+
+                    <div class="search-box">
+                        <input type="text" placeholder="Search...">
+                    </div>
+                </div>
+
+                <!-- Table Wrapper -->
+                <div class="table-wrapper">
+                    <table class="user-table">
+                        <thead>
+                            <tr>
+                                <th>User Type</th>
+                                <th>Name</th>
+                                <th>Mobile</th>
+                                <th>Email</th>
+                                <th>Status</th>
+                                <th>Membership</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>SUPER USER</td>
+                                <td>ADMINISTRATOR</td>
+                                <td>7772802696</td>
+                                <td>info@testpanindia.com</td>
+                                <td>Working</td>
+                                <td class="membership-tag super">Super Admin</td>
+                                <td>
+                                    <button class="btn edit">Edit</button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>CENTER</td>
+                                <td>Pawan Rajput Raj</td>
+                                <td>7489858983</td>
+                                <td>pawan@example.com</td>
+                                <td>Working</td>
+                                <td class="membership-tag standard">Standard</td>
+                                <td>
+                                    <button class="btn edit">Edit</button>
+                                    <button class="btn pass">Password</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
