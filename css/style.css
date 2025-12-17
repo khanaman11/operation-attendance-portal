@@ -780,7 +780,7 @@ td {
     justify-content: space-between;
 }
 
-.btn {
+.details-btn {
     padding: 7px 14px;
     background: #ffffff20;
     border: none;
@@ -789,6 +789,9 @@ td {
     cursor: pointer;
     font-size: 13px;
     transition: 0.3s;
+}
+.details-btn select{
+    padding: 0;
 }
 
 .btn:hover {
@@ -922,6 +925,7 @@ td {
     font-weight: 600;
     display: block;
     margin-bottom: 6px;
+   
 }
 
 .options label {
@@ -1015,7 +1019,7 @@ td {
     text-align: left;
     padding: 12px;
     font-weight: 600;
-    color: #333;
+    color: #fff;
     white-space: nowrap;
 }
 
